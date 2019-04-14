@@ -1,0 +1,19 @@
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+
+@import "reset.css";
+@import "typography.css";
+@import "navigation.css";
+@import "footer.css";
+@import "home-container.css";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #2d3436;
+    background-image: radial-gradient(circle at 0%, #2d3436 0%, #000000 100%);
+}
+
+main {
+    flex: 1;
+}

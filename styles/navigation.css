@@ -1,0 +1,148 @@
+header {
+
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav.main > ul {
+    margin: 0;
+    display: flex;
+}
+
+nav.main ul li {
+    display: block;
+    list-style: none outside;
+    position: relative;
+}
+
+nav.main ul li a {
+    display: block;
+    color: #efefef;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    transition: 0.15s;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-weight: 500;
+}
+
+nav.main a:focus,
+nav.main a:hover {
+    color: #64D130;
+}
+
+nav.main ul,
+.site-branding {
+    padding: 1.5rem 7rem;
+}
+
+nav.main ul {
+    padding-left: 0;
+}
+
+.site-branding {
+    padding-right: 0;
+}
+
+.site-title {
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+.site-header .site-title a {
+    display: block;
+    text-decoration: none;
+    color: #EEE;
+    font-size: 1.5rem;
+}
+
+.site-header .site-description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #EEE;
+    padding-bottom: 0;
+}
+
+.site-logo {
+    width: 6rem;
+}
+
+#main-nav-toggle {
+    display: none;
+}
+
+#toggle {
+    position: relative;
+    flex: 0 0 auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#times-icon {
+    display: none;
+}
+
+@media screen and (max-width: 860px) {
+    .site-branding {
+        padding: 1.5rem;
+    }
+    nav.main {
+        display: none;
+    }
+
+    nav.main ul li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav.main ul li a:focus,
+    nav.main ul li a:hover {
+        color: #000;
+        background: #fff;
+    }
+
+    nav.main ul {
+        display: block;
+        padding: 0;
+    }
+
+    nav.main ul li {
+        padding: 0 0;
+    }
+
+    #main-nav-toggle:checked + .wrapper nav.main {
+        display: block;
+        flex: 1 0 100%;
+    }
+
+    #main-nav-toggle:checked + .wrapper .site-branding {
+        display: block;
+    }
+
+    #main-nav-toggle:checked + .wrapper #toggle .fa-times {
+        display: block;
+    }
+
+    #main-nav-toggle:checked + .wrapper #toggle .fa-bars {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 860px){
+    #toggle {
+        display: none;
+    }
+}
