@@ -95,10 +95,11 @@ nav.main ul {
     display: none;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 800px) {
     .site-branding {
         padding: 1.5rem;
     }
+
     nav.main {
         display: none;
     }
@@ -141,7 +142,7 @@ nav.main ul {
     }
 }
 
-@media screen and (min-width: 860px){
+@media screen and (min-width: 801px) {
     #toggle {
         display: none;
     }

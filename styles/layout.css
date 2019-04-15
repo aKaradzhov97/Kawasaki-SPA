@@ -1,0 +1,126 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-container article {
+    color: white;
+}
+
+.home-container .dots-container,
+.home-container .text-container {
+    flex: 1;
+}
+
+.home-container .dots-container .dots-inner {
+    position: fixed;
+    top: 45vh;
+    left: 0.25rem;
+}
+
+.home-container .main-container {
+    flex: 10;
+}
+
+.home-container .main-container > section {
+    padding: 0 1rem;
+}
+
+/* DOTS CONTAINER */
+
+.home-container .dots-container .dots-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-container .dots-container .dot {
+    margin: 0.75rem;
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid #64D130;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.home-container .dots-container .dot.active {
+    background: #64D130;
+}
+
+/* END OF DOTS CONTAINER */
+
+/* ROTATED TEXT CONTAINER */
+
+.home-container .text-container .text-outer {
+    position: fixed;
+    top: 52.5vh;
+    right: 1rem;
+}
+
+.home-container .text-container .text-inner {
+    position: relative;
+}
+
+.home-container .text-container .text-inner p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0;
+    right: -10rem;
+    width: 21rem;
+    padding-bottom: 0;
+}
+
+/* END OF ROTATED TEXT CONTAINER */
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 250px) {
+    .home-container .dots-container .dots-inner {
+        left: 0.5rem;
+    }
+
+    .home-container .text-container .text-outer {
+        right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .home-container .dots-container .dots-inner {
+        left: 1rem;
+    }
+
+    .home-container .text-container .text-outer {
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .home-container .main-container {
+        flex: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-container .dots-container .dots-inner {
+        left: 1.5rem;
+    }
+
+    .home-container .text-container .text-outer {
+        right: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .home-container .dots-container .dots-inner {
+        left: 2.5rem;
+    }
+
+    .home-container .text-container .text-outer {
+        right: 3.5rem;
+    }
+}

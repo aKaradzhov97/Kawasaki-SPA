@@ -2,18 +2,31 @@
 
 @import "reset.css";
 @import "typography.css";
+@import "links.css";
+@import "headings.css";
 @import "navigation.css";
 @import "footer.css";
+@import "layout.css";
 @import "home-container.css";
+@import "upper-container.css";
+@import "dashboard.css";
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+.bg-grad {
     background-color: #2d3436;
     background-image: radial-gradient(circle at 0%, #2d3436 0%, #000000 100%);
+}
+
+.bg-color {
+    background-color: #000;
 }
 
 main {
     flex: 1;
 }
+
